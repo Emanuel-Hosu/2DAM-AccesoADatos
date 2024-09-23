@@ -1,0 +1,19 @@
+package ArrayToStack;
+
+import java.util.ArrayList;
+
+public class Stack<T> {
+	private ArrayList<T> stack;
+	
+	public Stack() {
+		stack = new ArrayList<T>();
+	}
+	
+	public void push(T elem) {
+		stack.add(elem);
+	}
+	
+	public T pop() {
+		return stack.size(-1);
+	}
+}

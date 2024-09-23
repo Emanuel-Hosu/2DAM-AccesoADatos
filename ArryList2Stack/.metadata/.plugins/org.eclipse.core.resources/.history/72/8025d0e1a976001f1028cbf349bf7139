@@ -1,0 +1,41 @@
+package ArrayToStack;
+
+import java.util.ArrayList;
+
+public class Stack<T> {
+	private ArrayList<T> stack;
+	
+	public Stack() {
+		stack = new ArrayList<T>();
+	}
+	
+	public void push(T elem) {
+		stack.add(elem);
+	}
+	
+	public int pop() {
+		//comprobar si esta vacia
+		if (!isEmpty()) {
+			int remover = stack.size() - 1;
+			stack.remove(stack.size() - 1);
+			
+			return remover;
+		}else {
+			System.out.println("ERROR EL STACK ESTA VACÍO");
+			return 0;
+		}
+	}
+	
+	public int peek() {
+		return stack.size() - 1;
+	}
+	
+	public boolean isEmpty() {
+		if (stack.size() < 1) {
+			return true;
+		}else {
+			return false;
+		}
+	}
+	
+}
