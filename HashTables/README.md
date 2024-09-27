@@ -1,0 +1,21 @@
+There's a use case for this phone book application:
+1
+Emi
+624213356
+1
+Juan
+678896253
+4
+3
+Emi
+2
+Emi
+4
+2
+Juan
+4
+2
+Juan
+3
+Arturo
+5
