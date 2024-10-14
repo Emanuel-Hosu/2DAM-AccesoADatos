@@ -1,9 +1,8 @@
-package BSTTree;
-
-import HighInTrees.Node;
+package HighInTrees;
 
 public class BST {
-	Node root;
+	private Node root;
+	private Integer cont = 0;
 	
 	public boolean contains(int _value) {
 		return containsRecursive(this.root, _value);
@@ -40,17 +39,5 @@ public class BST {
 			return current;
 		}
 		return current;
-	}
-	
-	public Integer findSkyLine() {
-		return RecursiveFindSkyLine(root);
-	}
-	
-	private Integer RecursiveFindSkyLine(Node current) {
-		if(current == null) {
-			return 0;
-		}
-		
-		return 1 + Math.max(RecursiveFindSkyLine(current.left), RecursiveFindSkyLine(current.right));
 	}
 }
