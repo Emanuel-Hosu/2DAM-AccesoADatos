@@ -1,4 +1,0 @@
-INDEX VERSION 1.134+C:\Users\emisi\Documents\2DAM\AccesoADatos\Prinicipios\.metadata\.plugins\org.eclipse.jdt.core
-558674389.index
-1865797976.index
-2356249969.index
